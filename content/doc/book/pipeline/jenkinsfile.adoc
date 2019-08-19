@@ -351,13 +351,16 @@ environment variables accessible from within Jenkins Pipeline is documented at
 link:http://localhost:8080/pipeline-syntax/globals#env[localhost:8080/pipeline-syntax/globals#env],
 assuming a Jenkins master is running on `localhost:8080`, and includes:
 
+BUILD_DISPLAY_NAME:: The build display name as set in the Advanced Project Options, or the string '#' followed by the 'BUILD_NUMBER'.
 BUILD_ID:: The current build ID, identical to BUILD_NUMBER for builds created in Jenkins versions 1.597+
 BUILD_NUMBER:: The current build number, such as "153"
 BUILD_TAG:: String of jenkins-\$\{JOB_NAME}-\$\{BUILD_NUMBER}. Convenient to put into a resource file, a jar file, etc for easier identification
 BUILD_URL:: The URL where the results of this build can be found (for example \http://buildserver/jenkins/job/MyJobName/17/ )
 EXECUTOR_NUMBER:: The unique number that identifies the current executor (among executors of the same machine) performing this build. This is the number you see in the "build executor status", except that the number starts from 0, not 1
 JAVA_HOME:: If your job is configured to use a specific JDK, this variable is set to the JAVA_HOME of the specified JDK. When this variable is set, PATH is also updated to include the bin subdirectory of JAVA_HOME
+JENKINS_HOME:: The path to the home of the Jenkins installation on the file system.
 JENKINS_URL:: Full URL of Jenkins, such as https://example.com:port/jenkins/ (NOTE: only available if Jenkins URL set in "System Configuration")
+JOB_BASE_NAME:: The short name of the project of this build, with the folder names removed.
 JOB_NAME:: Name of the project of this build, such as "foo" or "foo/bar".
 NODE_NAME:: The name of the node the current build is running on. Set to 'master' for master node.
 WORKSPACE:: The absolute path of the workspace
