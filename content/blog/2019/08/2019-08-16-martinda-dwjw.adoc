@@ -1,0 +1,113 @@
+---
+layout: post
+title: "A DWJW 2019 Trip Report"
+tags:
+- gsoc
+- gsoc2019
+- community
+author: martinda
+---
+
+DevOps World Jenkins World 2019 is over! This was a great conference. I met many people who
+I have worked with on-line. It is great to meet them in person. I find the Jenkins community to be
+very welcoming. I attended lots of talks, gave two lunch time presentation myself, and had a chance to collect
+the t-shirts and stickers we have been promising to 2018 and 2019
+link:/projects/gsoc/2019/role-strategy-performance[Google Summer of Code] participants
+since last year. I was able to ship to participants on September 9, 2019. I want to thank Alyssa Tong
+for setting aside those t-shirts and stickers!
+
+=== Configuring Jenkins using the command line
+
+The first talk I gave was about configuring Jenkins using only shell scripts.
+This is made possible by the link:https://github.com/jenkinci/configuration-as-code-plugin[Jenkins Configuration as Code plugin].
+I have published the slides, and link:https://github.com/martinda/dwjw-2019-demo[the source code] to follow along.
+However, this solution relies on the REST API for plugin installation,
+and it is less than ideal due to the internal limitations of the `installNecessaryPlugins` REST API feature.
+I have documented those limitations in the TODO link:/TODO[presentation]. But soon the plugin installation problems will be solved.
+Google Summer of Code Natasha Stopa is working on a command line tool that installs
+plugins from a user provided YAML file. More on this later.
+
+=== The GSoC Progress Report
+
+This bring me to the second presentation I gave, the 
+TODO link:[Google Summer of Code (GSoC) 2019 Progress Report].
+We have five on-going projects at this time in the GSoC program.
+
+First, the gitlab multi-branch plugin project aims to bring the gitlab
+source code management tool plugin at par in terms of features with other
+similar plugins like the github multi-branch plugin. This is going really
+well and you can find out more by visiting the ...
+
+The second project is one I already mentioned above, the plugin manager
+command line tool.  This project is also approaching completion,
+and Natasha gave a great demonstration of its functionalities at the
+conference.  This command line tool, combined with the Configuration as
+Code plugin, together provide a complete and easier than before scriptable
+way to setup Jenkins.
+
+The third project, Remoting over Apache Kafka plugin with Kubernetes
+Features, is also approaching completion.  This project is actually a
+continuation of last year's Remoting over Kafka project. It is great
+to see last year's student become a mentor this year and to see the
+project continue with a new student.  I also learned at the conference
+that the Remoting over Kafka is officially offered as a communication
+method between Jenkins master and agents. TODO insert pic.
+
+The fourth project, Role Strategy Performance Improvements TODO
+link was completed ahead of schedule, and the student has continued
+to contribute to the community with an additional plugin, the
+link:https://github.com/jenkinsci/folder-auth-plugin/[Folder Auth Plugin]
+and he has written a
+link:/blog/2019/08/16/folder-auth-plugin/[blog about it].
+The student also created a micro-benchmarking framework for
+the Jenkins core and the plugins. Check it out!
+
+The fifth project is the Working Hours plugin enhancements. The goal of
+this plugin is to prevent deployement outside of configured hours or on
+holidays. You don't want to deploy while everyone is sleeping or away
+on a holiday!  In this project, the student has considerably improved
+the usability of the existing plugin by using a React UI so open source
+controls such as a date picker can be used. This also pioneers the
+integration of React with Jenkins.
+
+=== The refocusing
+
+Last year at the contributor summit, Kohsuke Kawaguchi introduced the
+five powers of Jenkins, and at the same time expressed his hope that
+these powers would eventually merge and join forces. The powers were:
+Evergreen, Cloud Native, Jenkins X, Configuration as Code, BlueOcean
+and Pipeline.  This year, the landscape has changed. In a talk by Jeremy
+Hartley, the Jenkins project is refocusing itself.
+Evergreen is no longer 
+
+I attended the talk on the future of Jenkins by Jeremy Hartley. 
+
+By far, the most fun aspect of the conference is to meet and chat with Jenkins users
+and the Jenkins community and the great people I have met while in San Francisco. TODO pic.
+
+Lastly, I want to thank Cloudbees for supporting the Jenkins open source community. We had a really nice
+booth at the conference right next to them.
+
+==== What's next
+
+The Google Summer of Code program for 2019 is coming to an end soon. I encourage all students
+and all mentors to keep up their excellent work. The user community is benefiting from
+the new features and solutions you are bringing, and you can be proud of your hard work.
+
+Students who are still eligible next year are of course encourage to apply
+again, and if you are no longer eligible as a student, I invite you to
+join the Jenkins mentor team.  Being a mentor is a great way for you to
+build people skills and management skills, while staying close to the
+code. You could for example mentor a student to continue your project,
+or you could mentor a different project all together.
+
+The final results will be announced by Google on September 3. Good luck everyone!
+
+== Links and Feedback
+
+I would love to hear your comments and suggestions. Please feel free to reach
+out to me through either the
+link:https://gitter.im/jenkinsci/gsoc-sig[GSoC SIG Gitter chat] or through
+link:mailto:jenkinsci-dev@googlegroups.com[Jenkins Developer Mailing list].
+
+* link:https://drive.google.com/file/d/1IVe3T8WdTILmb62PAIJveR4KbBWzPt1k/view?usp=sharing[Presentation slides for second phase evaluations]
