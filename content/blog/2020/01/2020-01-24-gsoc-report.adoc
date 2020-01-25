@@ -16,7 +16,7 @@ opengraph:
   image: /images/post-images/2020/01-gsoc2019-report/gsoc2019-highlights.png
 ---
 
-Google Summer of Code never is a summer internship program, but actually it is a year-round effort for the organization and some community members.
+Google Summer of Code is much more than a summer internship program, it is a year-round effort for the organization and some community members.
 Now, after the DevOps World | Jenkins World conference in Lisbon, we can say that GSoC 2019 is officially over.
 We would like to start this by thanking all participants: students, mentors, subject matter experts and all other contributors who proposed project ideas, participated in student selection, in community bonding and in further discussions and reviews.
 Google Summer of Code is a major effort which would not be possible without the active participation of the Jenkins community.
