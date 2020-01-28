@@ -189,7 +189,7 @@ In order to get students involved into the community better, almost all projects
 Every year we have students who contact mentors via personal messages.
 Students, if you are reading this, please do **NOT** send us personal messages about the projects, you will not receive any preferential treatment.
 Obviously, in open source we want all discussions to be public, so students have to be reminded of that regularly.
-In 2019 were using Gitter chat for most communications, but from an admin point of view this is more fragmented than mailing lists.
+In 2019 we are using Gitter chat for most communications, but from an admin point of view this is more fragmented than mailing lists.
 It is also harder to search.
 Chat rooms are very convenient because they are focused, but from an admin point of view, the lack of threads in Gitter makes it hard to get an overview.
 Gitter threads were added recently (Nov 2019) but do not yet work well on Android and iOS.
