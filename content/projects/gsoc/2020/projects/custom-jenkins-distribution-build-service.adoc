@@ -7,9 +7,8 @@ year: 2020
 status: "Active"
 student: sladyn98
 mentors:
-- "linuxsuren"
 - "kwhetstone"
-- "baymac"
+- "martinda"
 advisors:
 - "oleg_nenashev"
 links:
